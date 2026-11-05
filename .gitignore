@@ -1,0 +1,130 @@
+# ==========================================================================
+# .gitignore — file di sini tidak ikut ter-commit.
+# Ingat: aturan ini hanya berlaku untuk file yang BELUM pernah di-commit.
+# ==========================================================================
+
+# ---------- Rahasia: env dan kredensial ----------
+.env
+.env.*
+!.env.example
+*.local
+secrets.*
+credentials*.json
+*-credentials.json
+client_secret*.json
+service-account*.json
+*-service-account*.json
+*firebase-adminsdk*.json
+.npmrc
+.yarnrc.yml
+.netrc
+.pgpass
+.htpasswd
+.git-credentials
+*.token
+
+# ---------- Rahasia: kunci dan sertifikat ----------
+*.pem
+*.key
+*.crt
+*.cer
+*.csr
+*.der
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.ppk
+*.gpg
+*.asc
+id_rsa
+id_rsa.*
+id_dsa
+id_dsa.*
+id_ecdsa
+id_ecdsa.*
+id_ed25519
+id_ed25519.*
+
+# ---------- Rahasia: akun cloud dan hosting ----------
+.aws/
+.azure/
+.gcloud/
+.firebase/
+.netlify/
+.vercel/
+.wrangler/
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# ---------- Data pribadi ----------
+# Foto asli resolusi penuh: masih menyimpan metadata kamera dan waktu edit.
+# Website hanya memakai Asset/marwanto-cutout.webp.
+Asset/Latar_biru.jpeg
+# Hapus tanda # di bawah kalau CV berisi nomor HP atau alamat rumah.
+# Asset/CV*.pdf
+
+# ---------- Database, cadangan, dan arsip ----------
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sql
+*.dump
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+*.temp
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.tgz
+
+# ---------- Hasil instal dan build ----------
+node_modules/
+dist/
+dist-ssr/
+build/
+coverage/
+.vite/
+.cache/
+*.tsbuildinfo
+
+# ---------- Log ----------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------- Sisa versi lama (tidak dipakai lagi, aman dihapus) ----------
+/css/
+/js/
+/vendor/
+
+# ---------- Editor dan alat bantu ----------
+.vscode/
+.idea/
+.fleet/
+.history/
+.claude/
+.cursor/
+*.swp
+*.swo
+*~
+Claude outputs/
+
+# ---------- Sistem operasi ----------
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
